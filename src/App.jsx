@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ExerciseList from "./components/ExerciseList";
 import ExerciseForm from "./components/ExerciseForm";
 import "./styles.css";
+import "./logo.css"; // Neue Datei gleich anlegen
 
 function App() {
   const [exercises, setExercises] = useState([]);
@@ -21,42 +22,13 @@ function App() {
 
   return (
     <div>
-      <header
-        style={{
-          textAlign: "center",
-          marginTop: "30px",
-          marginBottom: "30px",
-        }}
-      >
+      <header className="app-header">
         <img
           src={`${import.meta.env.BASE_URL || ''}logo.png`}
           alt="Trainingsguru Logo"
-          style={{
-            height: "100px",
-            borderRadius: "16px",
-            boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
-            transition: "transform 0.3s ease, box-shadow 0.3s ease",
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.transform = "scale(1.05)";
-            e.currentTarget.style.boxShadow = "0 8px 16px rgba(0,0,0,0.3)";
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.transform = "scale(1)";
-            e.currentTarget.style.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
-          }}
+          className="app-logo"
         />
-        <h1
-          style={{
-            fontFamily: "Poppins, sans-serif",
-            fontSize: "2rem",
-            marginTop: "15px",
-            color: "#333",
-            textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-          }}
-        >
-          Trainingsguru
-        </h1>
+        <h1 className="app-title">Trainingsguru</h1>
       </header>
 
       <div className="container">
