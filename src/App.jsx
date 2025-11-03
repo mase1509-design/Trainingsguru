@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ExerciseList from "./components/ExerciseList";
 import ExerciseForm from "./components/ExerciseForm";
 import "./styles.css";
-import "./logo.css"; // Neue Datei gleich anlegen
+import "./logo.css";
 
 function App() {
   const [exercises, setExercises] = useState([]);
@@ -24,7 +24,7 @@ function App() {
     <div>
       <header className="app-header">
         <img
-          src={`${import.meta.env.BASE_URL || ''}logo.png`}
+          src={`${import.meta.env.BASE_URL}logo.png`}
           alt="Trainingsguru Logo"
           className="app-logo"
         />
