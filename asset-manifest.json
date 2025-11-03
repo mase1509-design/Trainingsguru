@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Trainingsguru/static/css/main.f6102441.css",
+    "main.js": "/Trainingsguru/static/js/main.cf6d0d26.js",
+    "index.html": "/Trainingsguru/index.html",
+    "main.f6102441.css.map": "/Trainingsguru/static/css/main.f6102441.css.map",
+    "main.cf6d0d26.js.map": "/Trainingsguru/static/js/main.cf6d0d26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6102441.css",
+    "static/js/main.cf6d0d26.js"
+  ]
+}
