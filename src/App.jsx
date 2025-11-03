@@ -5,21 +5,6 @@ import "./styles.css";
 import "./logo.css";
 
 function App() {
-  const [exercises, setExercises] = useState([]);
-
-  useEffect(() => {
-    const stored = localStorage.getItem("exercises");
-    if (stored) setExercises(JSON.parse(stored));
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("exercises", JSON.stringify(exercises));
-  }, [exercises]);
-
-  const addExercise = (exercise) => {
-    setExercises([...exercises, exercise]);
-  };
-
   return (
     <div>
       <header className="app-header">
@@ -30,13 +15,6 @@ function App() {
         />
         <h1 className="app-title">Trainingsguru</h1>
       </header>
-
-      <div className="container">
-        <ExerciseForm addExercise={addExercise} />
-        <ExerciseList exercises={exercises} setExercises={setExercises} />
-      </div>
     </div>
   );
 }
-
-export default App;
