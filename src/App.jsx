@@ -26,11 +26,7 @@ function App() {
     <div>
       {/* Header mit Logo */}
       <header className="app-header">
-        <img
-          src={`${import.meta.env.BASE_URL}logo.png`}
-          alt="Trainingsguru Logo"
-          className="app-logo"
-        />
+       
         <h1 className="app-title">Fitness Tracker</h1>
       </header>
 
@@ -44,3 +40,4 @@ function App() {
 }
 
 export default App;
+
