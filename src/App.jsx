@@ -3,6 +3,14 @@ import ExerciseList from "./components/ExerciseList";
 import ExerciseForm from "./components/ExerciseForm";
 import "./styles.css";
 
+<header style={{ textAlign: "center", marginTop: "20px" }}>
+  <img
+    src={`${import.meta.env.BASE_URL || ''}logo.png`}
+    alt="Trainingsguru Logo"
+    style={{ height: "100px" }}
+  />
+</header>
+
 function App() {
   const [exercises, setExercises] = useState([]);
 
@@ -33,3 +41,4 @@ function App() {
 }
 
 export default App;
+
