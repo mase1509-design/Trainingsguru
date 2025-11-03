@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mase1509-design.github.io/Trainingsguru/",
   "name": "fitness-tracker",
   "version": "1.0.0",
   "private": true,
@@ -12,3 +13,4 @@
     "build": "react-scripts build"
   }
 }
+
